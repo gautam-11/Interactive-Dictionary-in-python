@@ -33,8 +33,18 @@ def retrieve_definition(word):
 		else:
 			return ("We don't understand your entry. Apologies.")
 
-#input from user
-user_word = input('Enter word : ')
 
-print(retrieve_definition(user_word))
+print('Type exit to close the program')
+#input from user
+while True:
+	user_word = input('Enter word : ')
+	if user_word == 'exit':
+		break
+	output = retrieve_definition(user_word)
+
+	if type(output) == list:
+		for item in output:
+			print('-', item )
+	else:
+		print("-", output)
 	
