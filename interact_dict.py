@@ -3,7 +3,7 @@ import json
 import difflib
 from difflib import get_close_matches
 
-#Loading the json data as python dictionary
+#Loading json data as python dictionary
 data = json.load( open("data.json") )
 
 def retrieve_definition(word):
