@@ -6,6 +6,9 @@ from difflib import get_close_matches
 #Loading json data as python dictionary
 data = json.load( open("data.json") )
 
+def printdata():
+	print(data)
+
 def retrieve_definition(word):
 	#Removing case sensitivity of the program
 	word = word.lower()
