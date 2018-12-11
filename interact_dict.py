@@ -40,6 +40,7 @@ def retrieve_definition(word):
 
 print('Type exit to close the program')
 #input from user
+#process until user types 'exit' 
 while True:
 	user_word = input('Enter word : ')
 	if user_word == 'exit':
