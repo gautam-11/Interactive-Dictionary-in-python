@@ -6,6 +6,7 @@ from difflib import get_close_matches
 #Loading json data as python dictionary
 data = json.load( open("data.json") )
 
+#Print data from json file
 def printdata():
 	print(data)
 
